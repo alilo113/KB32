@@ -1,7 +1,9 @@
 from pynput import keyboard
+from logger import log_keystrokes
 
 def on_press(key):
     try:
+        log_keystrokes(key)
         print(f'This Key {key.char} pressed')
     except AttributeError:
         print(f'The special key {key} pressed')
