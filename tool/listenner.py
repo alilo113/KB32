@@ -1,7 +1,5 @@
 from pynput import keyboard
 
-file_name = "log.txt"
-
 def on_press(key):
         try:
             print(f"Key pressed: {key.char}")
