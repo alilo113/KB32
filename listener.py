@@ -1,5 +1,6 @@
 from pynput import keyboard
 
+print("Listening... Press ESC to stop.")
 def on_press(key):
     try:
         print('alphanumeric key {0} pressed'.format(
@@ -9,7 +10,6 @@ def on_press(key):
             key))
         
     if key == keyboard.Key.esc:
-        # Stop listener
         return False
         
 # Collect events until released
